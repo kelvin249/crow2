@@ -7,10 +7,10 @@ import Grid from '../components/Grid'
 const VideoPage = (props) => {
   console.log(props)
   // const siteTitle = props.data.site.siteMetadata.title
-  const mediaLinks = props.data.allContentfulMediaLink.edges
-  // const logo = props.data.allContentfulAsset.edges
-  // console.log(logo);
-  // console.log(mediaLinks);
+  const videoLinks = props.data.allContentfulVideoLink.edges
+
+
+  console.log(videoLinks);
 
 
 
@@ -21,8 +21,10 @@ const VideoPage = (props) => {
 
         <div className="wrapper">
           <h2 className="section-headline, pageTitle">Videos</h2>
+
           <ul className="article-list">
-            {mediaLinks.map(({ node }) => {
+            {videoLinks.map(({ node }) => {
+              console.log(node)
               return (
                 <li key={node.altText}>
                   <Grid mediaLink={node} />
@@ -30,6 +32,7 @@ const VideoPage = (props) => {
               )
             })}
           </ul>
+
         </div>
       </div>
     </Layout>
@@ -45,21 +48,21 @@ export const videoPageQuery = graphql`
         title
       }
     }
-    allContentfulMediaLink(filter: {set: {eq: "/videos/"}}) {
-      edges {
-        node {
-          id
-          altText
-         image {
-          gatsbyImageData(placeholder: BLURRED, formats: AUTO)
-        }
-          caption
-          link
-          order
-          set
+      allContentfulVideoLink {
+        edges {
+          node {
+            id
+            altText
+            duration
+            views
+            image {
+              gatsbyImageData(placeholder: BLURRED,
+                 formats: WEBP)
+            }
+            link
+          }
         }
       }
     }
-
-  }
+  
 `

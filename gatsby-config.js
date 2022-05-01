@@ -12,12 +12,6 @@ module.exports = {
       "spaceId": process.env.CONTENTFUL_SPACE_ID
     }
   },
-  {
-    resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      "trackingId": "90tmfx5bc0k5"
-    }
-  },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

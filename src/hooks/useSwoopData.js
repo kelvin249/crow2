@@ -10,7 +10,7 @@ export const useSwoopData = () => {
                   id
                   relativePath
                   childImageSharp {
-                    gatsbyImageData(formats: WEBP)
+                    gatsbyImageData(formats: [WEBP, AVIF])
                   }
                 }
               }

@@ -8,7 +8,6 @@ export const useSwoopData = () => {
               edges {
                 node {
                   id
-                  relativePath
                   childImageSharp {
                     gatsbyImageData(formats: [WEBP, AVIF])
                   }

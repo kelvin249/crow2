@@ -15,7 +15,6 @@ module.exports = {
   },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-webpack-bundle-analyser-v2",
     "gatsby-plugin-sitemap",
   {
     resolve: 'gatsby-plugin-manifest',

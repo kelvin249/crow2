@@ -26,8 +26,8 @@ const Swoop = () => {
 
     return (
         <div className={container}>
-            <img src="./logo.png" alt="" className={logo} ref={logoRef} />
-            <img src="./pwf.png" alt="" className={pwf} ref={pwfRef} />
+            <img src="./logo3.jpg" alt="" className={logo} ref={logoRef} />
+            <img src="./pwf.jpg" alt="" className={pwf} ref={pwfRef} />
             <div className={menu}>
                 <Link to="/videos"><button className={button} >Video</button></Link>
                 <Link to="/photos"><button className={button} >Photos</button></Link>

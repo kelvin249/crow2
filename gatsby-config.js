@@ -5,24 +5,25 @@ module.exports = {
     title: `Crowlin Circus`,
     siteUrl: `https://crowlincircus.com`
   },
-  plugins: [{
+  plugins: [
+    {
     resolve: 'gatsby-source-contentful',
     options: {
       "accessToken": process.env.CONTENTFUL_ACCESS_TOKEN,
       "spaceId": process.env.CONTENTFUL_SPACE_ID
     }
   },
-  `gatsby-plugin-netlify`,
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-    `gatsby-plugin-webpack-bundle-analyser-v2`,
+    "gatsby-plugin-webpack-bundle-analyser-v2",
     "gatsby-plugin-sitemap",
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
     }
-  }, "gatsby-plugin-sharp",
+  },
+   "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "react-burger-menu",
   {
@@ -32,5 +33,6 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+  }
+]
 };

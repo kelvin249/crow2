@@ -14,7 +14,9 @@ const Swoop = () => {
     useEffect(() => {
         gsap.to(logoRef.current, {
             y: "30vh",
-            scale: 10,
+            scale: 7,
+            ease: "back.out",
+            duration: 0.7
         })
         gsap.to(pwfRef.current, {
             opacity: 1,

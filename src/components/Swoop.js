@@ -31,9 +31,9 @@ const Swoop = () => {
             <img src="./logo3.jpg" alt="" className={logo} ref={logoRef} />
             <img src="./pwf.jpg" alt="" className={pwf} ref={pwfRef} />
             <div className={menu}>
-                <Link to="/videos"><button className={button} >Video</button></Link>
+                <Link to="/videos"><button className={button} >Videos</button></Link>
                 <Link to="/photos"><button className={button} >Photos</button></Link>
-                <Link to="links"><button className={button} >Links</button></Link>
+                {/* <Link to="links"><button className={button} >Links</button></Link> */}
                 <Link to="about"><button className={button} >About</button></Link >
             </div>
         </div>

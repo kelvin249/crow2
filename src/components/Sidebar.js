@@ -13,9 +13,9 @@ const Sidebar = () => {
       <a className="menu-item" href="/photos">
         Photos
       </a>
-      <a className="menu-item" href="/links">
+      {/* <a className="menu-item" href="/links">
         Links
-      </a>
+      </a> */}
       <a className="menu-item" href="/about">
         About
       </a>

@@ -9,7 +9,11 @@ const IndexPage = (props) => {
   return (
     <>
     <Sidebar></Sidebar>
-      <Helmet title={siteTitle} />
+    <Helmet>
+        <html lang="en" />
+        {/* title={siteTitle}  */}
+        <meta name="google-site-verification" content="UX2f3ugRNrAs75YMv-D5gAHK_s2FGCfwzJV_392nSfw"/>
+        </Helmet>
       <Swoop />
     </>
   )

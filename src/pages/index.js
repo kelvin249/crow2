@@ -11,9 +11,15 @@ const IndexPage = (props) => {
     <Sidebar></Sidebar>
     <Helmet>
         <html lang="en" />
+<<<<<<< HEAD
         title={siteTitle} 
         <meta name="google-site-verification" content="UX2f3ugRNrAs75YMv-D5gAHK_s2FGCfwzJV_392nSfw"/>
       </Helmet>
+=======
+        {/* title={siteTitle}  */}
+        <meta name="google-site-verification" content="UX2f3ugRNrAs75YMv-D5gAHK_s2FGCfwzJV_392nSfw"/>
+        </Helmet>
+>>>>>>> master
       <Swoop />
     </>
   )

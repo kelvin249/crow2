@@ -33,10 +33,6 @@ const Swoop = () => {
             <div className={menu}>
                 <Link to="/videos"><button className={button} >Videos</button></Link>
                 <Link to="/photos"><button className={button} >Photos</button></Link>
-<<<<<<< HEAD
-=======
-                {/* <Link to="links"><button className={button} >Links</button></Link> */}
->>>>>>> master
                 <Link to="about"><button className={button} >About</button></Link >
             </div>
         </div>

@@ -3,11 +3,11 @@ import { Link } from 'gatsby'
 
 import { button } from './Button.module.css'
 
-function Button(props) {
-    console.log(props)
+function Button({to, caption}) {
+    // console.log(props)
     return (
         <button className={button} >
-            <Link to={props.to} >{props.caption} </Link>
+            <Link to={to} >{caption} </Link>
         </button>
     )
 }

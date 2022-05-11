@@ -22,9 +22,6 @@ function About(props) {
                         Burning,
                     </p>
 
-                    <img src={clubGIF} alt="" className={clubs2} />
-                    <img src={clubGIF} alt="" className={clubs1} />
-
                     <p>Fire Spitting and Fireworks to creact 2 Fire Shows for hire .</p>
                     <p>One Show of 15 min and another of about 25 min.</p>
                     <p>
@@ -35,7 +32,10 @@ function About(props) {
                         Taking bookings for: Parties, Weddings, Corporate Events,
                         Festivals, Concerts, Launches, Openings, promotional advertising
                     </p>
-                    ……………………………………………………………………………
+
+                    <img src={clubGIF} alt="" className={clubs2} />
+                    <img src={clubGIF} alt="" className={clubs1} />
+                    
                     <p>
                         Crowlin Circus executa espectáculos de fogo, artes circenses e
                         diversas animações (Andas, malabarismo, contact staff e poi

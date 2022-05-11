@@ -1,24 +1,22 @@
 import React from 'react';
+import {Link} from 'gatsby'
 import { slide as Menu } from 'react-burger-menu';
 
 const Sidebar = () => {
   return (
     <Menu>
-      <a className="menu-item" href="/">
+      <Link className="menu-item" to="/">
         Home
-      </a>
-      <a className="menu-item" href="/videos">
+      </Link>
+      <Link className="menu-item" to="/videos">
         Videos
-      </a>
-      <a className="menu-item" href="/photos">
+      </Link>
+      <Link className="menu-item" to="/photos">
         Photos
-      </a>
-      <a className="menu-item" href="/links">
-        Links
-      </a>
-      <a className="menu-item" href="/about">
+      </Link>
+      <Link className="menu-item" to="/about">
         About
-      </a>
+      </Link>
     </Menu>
   );
 };

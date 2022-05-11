@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Sidebar from '../components/Sidebar'
 
 import './base.css'
+// DO NOT REMOVE next line
 import {bmBurgerButton} from './Sidebar.css';
 
 const Header = () => {

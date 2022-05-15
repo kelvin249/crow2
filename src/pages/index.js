@@ -2,6 +2,7 @@ import * as React from "react"
 import Helmet from 'react-helmet'
 import Sidebar from '../components/Sidebar'
 import Swoop from '../components/Swoop'
+import Footer from '../components/Footer'
 
 const IndexPage = (props) => {
   console.log(props)
@@ -15,6 +16,7 @@ const IndexPage = (props) => {
         {/* <meta name="google-site-verification" content="UX2f3ugRNrAs75YMv-D5gAHK_s2FGCfwzJV_392nSfw"/> */}
         </Helmet>
       <Swoop />
+      <Footer />
     </>
   )
 }

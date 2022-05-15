@@ -13,7 +13,7 @@ const IndexPage = (props) => {
     <Helmet>
         <html lang="en" />
         title={siteTitle} 
-        {/* <meta name="google-site-verification" content="UX2f3ugRNrAs75YMv-D5gAHK_s2FGCfwzJV_392nSfw"/> */}
+        <meta name="google-site-verification" content="s4pYhrxydlzSdI13cOiwWWrxqpBx4z7V6ntV0s3sNMI" />
         </Helmet>
       <Swoop />
       <Footer />

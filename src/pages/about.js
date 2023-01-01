@@ -3,6 +3,8 @@ import Layout from '../components/Layout'
 // import Helmet from 'react-helmet'
 // import Hero from '../components/Hero'
 import Container from '../components/container'
+import { Seo } from "../components/seo"
+
 import clubGIF from '../images/clubs.gif'
 import { aboutus, clubs1,clubs2 } from './about.module.css'
 
@@ -72,3 +74,7 @@ function About(props) {
 }
 
 export default About
+
+export const Head = () => {
+    <Seo title="About" />
+}

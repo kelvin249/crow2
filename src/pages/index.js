@@ -1,6 +1,8 @@
 import * as React from "react"
 import Helmet from 'react-helmet'
 import Sidebar from '../components/Sidebar'
+import { Seo } from "../components/seo"
+
 import Swoop from '../components/Swoop'
 import Footer from '../components/Footer'
 
@@ -23,3 +25,6 @@ const IndexPage = (props) => {
 
 export default IndexPage
 
+export const Head = () => (
+  <Seo />
+)

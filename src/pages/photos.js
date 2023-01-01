@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Grid from '../components/Grid'
+import { Seo } from "../components/seo"
 
 
 const PhotosPage = (props) => {
@@ -36,6 +37,10 @@ const PhotosPage = (props) => {
 }
 
 export default PhotosPage
+
+export const Head = () => {
+    <Seo title="Photos" />
+}
 
 export const photoPageQuery = graphql`
   query {

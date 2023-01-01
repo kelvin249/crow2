@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 // import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Grid from '../components/Grid'
+import { Seo } from "../components/seo"
 
 const VideoPage = (props) => {
   console.log(props)
@@ -40,6 +41,10 @@ const VideoPage = (props) => {
 }
 
 export default VideoPage
+
+export const Head = () => {
+  <Seo title="Videos" />
+}
 
 export const videoPageQuery = graphql`
   query videosPageQuery {

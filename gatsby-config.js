@@ -16,25 +16,24 @@ module.exports = {
     }
   },
     "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        query: `
-        {
-          site {
-            siteMetadata {
-              siteUrl
-            }
-          }
-          allSitePage {
-            nodes {
-              path    }
-          }
-        }        
-      `
-    }
-  },
+  //   {
+  //     resolve: "gatsby-plugin-sitemap",
+  //     options: {
+  //       query: `
+  //       {
+  //         site {
+  //           siteMetadata {
+  //             siteUrl
+  //           }
+  //         }
+  //         allSitePage {
+  //           nodes {
+  //             path    }
+  //         }
+  //       }        
+  //     `
+  //   }
+  // },
   // {
   //   resolve: `gatsby-plugin-goatcounter`,
   //   options: {

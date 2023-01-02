@@ -6,14 +6,12 @@ import LinksItem from "../components/LinksItem"
 
 const LinksPage = (props) => {
     // console.log(props)
-    const siteTitle = props.data.site.siteMetadata.title
     const mediaLinks = props.data.allContentfulMediaLink.edges
     // console.log(mediaLinks);
 
     return (
         <Layout location={props.location} >
             <div style={{ background: '#000' }}>
-                <Helmet title={siteTitle} />
 
                 <div className="wrapper">
                     <h2 className="section-headline, pageTitle">Links</h2>

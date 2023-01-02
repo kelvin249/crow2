@@ -1,7 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout'
-// import Helmet from 'react-helmet'
-// import Hero from '../components/Hero'
 import Container from '../components/container'
 import { Seo } from "../components/seo"
 
@@ -12,7 +10,6 @@ function About(props) {
     console.log(props.location.path)
     return (
         <Layout location={props.location} >
-            {/* <Helmet title={siteTitle} /> */}
             <div className={aboutus}>
                 <h1 className="pageTitle">About</h1>
                 <Container>

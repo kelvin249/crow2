@@ -1,5 +1,4 @@
 import * as React from "react"
-import Helmet from 'react-helmet'
 import Sidebar from '../components/Sidebar'
 import { Seo } from "../components/seo"
 
@@ -8,15 +7,9 @@ import Footer from '../components/Footer'
 
 const IndexPage = (props) => {
   console.log(props)
-  const siteTitle = "Crowlin Circus"
   return (
     <>
     <Sidebar></Sidebar>
-    <Helmet>
-        <html lang="en" />
-        title={siteTitle} 
-        <meta name="google-site-verification" content="s4pYhrxydlzSdI13cOiwWWrxqpBx4z7V6ntV0s3sNMI" />
-        </Helmet>
       <Swoop />
       <Footer />
     </>
@@ -26,5 +19,5 @@ const IndexPage = (props) => {
 export default IndexPage
 
 export const Head = () => (
-  <Seo />
+  <Seo meta name="description" content="Playing with Fire" />
 )

@@ -1,13 +1,11 @@
 import * as React from "react"
 import { graphql } from 'gatsby'
-// import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Grid from '../components/Grid'
 import { Seo } from "../components/seo"
 
 const VideoPage = (props) => {
   console.log(props)
-  // const siteTitle = props.data.site.siteMetadata.title
   const videoLinks = props.data.allContentfulVideoLink.edges
 
 
@@ -18,7 +16,6 @@ const VideoPage = (props) => {
   return (
     <Layout location={props.location} >
       <div style={{ background: '#000' }}>
-        {/* <Helmet title={siteTitle} /> */}
 
         <div className="wrapper">
           <h2 className="section-headline, pageTitle">Videos</h2>
